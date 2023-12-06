@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+
+</head>
+<body>
+
+<!----------------------------------------------- HTML FOR MAIN CONTAINER-------------------------------------------->
+
+ <div class="main_container">
+        <div class="cont_top">
+<div class="top_header">
+<img src="211649_clipboard_icon.png" height="60px"/>&nbsp;&nbsp;&nbsp;
+    <h1>ToDo - List</h1>
+    <img src="https://media.tenor.com/qQl5CgdGMM4AAAAi/juggling-busy-bee.gif" height= "80px"  />
+</div>
+
+<!--------------------------------------------------- HTML FOR MID BODY -------------------------------------------->
+
+<div class="mid_body">
+<input type="text" id="list_text" placeholder="Add your task" class="text_input">
+<img src="istockphoto-688550958-612x612.jpg" id="AddUpdateClick" onclick="createToDoItem()" alt="+" class="_plus"/>
+
+</div>
+</div>
+
+<!-------------------------------------------- HTML FOR TODO LIST--------------------------------------------------  -->
+
+<div class="todo_list">
+    <h2 style="font-size: 40px ;font-family:monospace;">List of Tasks</h2>
+    <h5 id="Alert"></h5>
+ </div>
+
+   <!----------------------------------------- HTML FOR LISTS--------------------------------------------  -->
+  
+ <ul id="list_items" class="list_items">
+
+<!-- <li> TEST 1</li>
+<li> TEST 2</li>
+<li> TEST 3</li> -->
+
+</ul>
+ </div>
+
+
+ <!-- ---------------------------------------------- HTML FOR TODO POP UP ITEMS-------------------------------------------- -->
+
+    <div class="edit_todo">
+      <div class="head_edit">  <h2>EDIT ToDo</h2>
+        <img src="couple-bestfriends.gif" height="45px" alt="">
+      </div>
+        <div class="edit_body">
+            <p class="edit_info"></p>
+            <input type="text" class="  edit_input" placeholder="Update your task">
+            <button class="edit_btn accept"  onclick="updatePopup()">Update</button>
+            <button class="edit_btn cancel" onclick="closePopup()">Cancel</button>
+        </div>
+    </div>
+
+
+<!-- --------------------------------------------------HTML FOR JAVASCRIPT ---------------------->
+
+<script type="text/javascript" src="script.js"></script>
+
+
+</body>
+</html>
